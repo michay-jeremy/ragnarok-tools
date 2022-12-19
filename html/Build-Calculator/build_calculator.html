@@ -88,61 +88,77 @@
                 <p class="episode-desc">10.4</p>
             </div>
             <div class="container-select">
-                <label for="classe-select">Choose a job classe:</label>
-                <select name="classe" id="classe-select">
-                    <option value="none" disabled="disabled">-- Select a job classe--</option>
-                    <option id="novice" value="novice">Novice</option>
-                    <option id="supernovice" value="supernovice">Super Novice</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="swordman" value="swordman">Swordman</option>
-                    <option id="knight" value="knight">Knight</option>
-                    <option id="lordknight" value="lordknight">Lord Knight</option>
-                    <option id="crusader" value="crusader">Crusader</option>
-                    <option id="paladin" value="paladin">Paladin</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="thief" value="thief">Thief</option>
-                    <option id="assassin" value="assassin">Assassin</option>
-                    <option id="assassincross" value="assassincross">Assassin Cross</option>
-                    <option id="rogue" value="rogue">Rogue</option>
-                    <option id="stalker" value="stalker">Stalker</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="merchant" value="merchant">Merchant</option>
-                    <option id="blacksmith" value="blacksmith">Blacksmith</option>
-                    <option id="whitesmith" value="whitesmith">Whitesmith/Mastersmith</option>
-                    <option id="alchemist" value="alchemist">Alchemist</option>
-                    <option id="creator" value="creator">Creator/Biochemist</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="acolyte" value="acolyte">Acolyte</option>
-                    <option id="priest" value="priest">Priest</option>
-                    <option id="highpriest" value="highpriest">High Priest</option>
-                    <option id="monk" value="monk">Monk</option>
-                    <option id="champion" value="champion">Champion</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="archer" value="archer">Archer</option>
-                    <option id="hunter" value="hunter">Hunter</option>
-                    <option id="sniper" value="sniper">Sniper</option>
-                    <option id="bard" value="bard">Bard</option>
-                    <option id="clown" value="clown">Clown/Minstrel</option>
-                    <option id="dancer" value="dancer">Dancer</option>
-                    <option id="gypsy" value="gypsy">Gypsy</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="mage" value="mage">Mage</option>
-                    <option id="wizard" value="wizard">Wizard</option>
-                    <option id="highwizard" value="highwizard">High Wizard</option>
-                    <option id="sage" value="sage">Sage</option>
-                    <option id="professor" value="professor">Professor/Scholar</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="taekwon" value="taekwon">Taekwon</option>
-                    <option id="stargladiator" value="stargladiator">Star Gladiator</option>
-                    <option id="soullinker" value="soullinker">Soul Linker</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="ninja" value="ninja">Ninja</option>
-                    <option id="kagerou" value="kagerou">Kagerou</option>
-                    <option id="oboro" value="oboro">Oboro</option>
-                    <option value="none" disabled="disabled">===============</option>
-                    <option id="gunslinger" value="gunslinger">Gunslinger</option>
-                    <!-- <option id="rebellion" value="rebellion">Rebellion</option> -->
-                </select>
+                <div class="level-select">
+                    <div class="base-level_select">
+                        <label for="base-level">Base Lv:</label>
+                        <select name="base_level" id="base-level">
+                            <option value="default" id="base-level_option">1</option>
+                        </select>
+                    </div>
+                    <div class="job-level_select">
+                        <label for="job-level">Job Lv:</label>
+                        <select name="job_level" id="job-level">
+                            <option value="default" id="job-level_option">1</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="classe-select">Choose a job classe:</label>
+                    <select name="classe" id="classe-select">
+                        <option value="default">-- Select a job classe--</option>
+                        <option id="novice" value="novice">Novice</option>
+                        <option id="supernovice" value="supernovice">Super Novice</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="swordman" value="swordman">Swordman</option>
+                        <option id="knight" value="knight">Knight</option>
+                        <option id="lordknight" value="lordknight">Lord Knight</option>
+                        <option id="crusader" value="crusader">Crusader</option>
+                        <option id="paladin" value="paladin">Paladin</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="thief" value="thief">Thief</option>
+                        <option id="assassin" value="assassin">Assassin</option>
+                        <option id="assassincross" value="assassincross">Assassin Cross</option>
+                        <option id="rogue" value="rogue">Rogue</option>
+                        <option id="stalker" value="stalker">Stalker</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="merchant" value="merchant">Merchant</option>
+                        <option id="blacksmith" value="blacksmith">Blacksmith</option>
+                        <option id="whitesmith" value="whitesmith">Whitesmith/Mastersmith</option>
+                        <option id="alchemist" value="alchemist">Alchemist</option>
+                        <option id="creator" value="creator">Creator/Biochemist</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="acolyte" value="acolyte">Acolyte</option>
+                        <option id="priest" value="priest">Priest</option>
+                        <option id="highpriest" value="highpriest">High Priest</option>
+                        <option id="monk" value="monk">Monk</option>
+                        <option id="champion" value="champion">Champion</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="archer" value="archer">Archer</option>
+                        <option id="hunter" value="hunter">Hunter</option>
+                        <option id="sniper" value="sniper">Sniper</option>
+                        <option id="bard" value="bard">Bard</option>
+                        <option id="clown" value="clown">Clown/Minstrel</option>
+                        <option id="dancer" value="dancer">Dancer</option>
+                        <option id="gypsy" value="gypsy">Gypsy</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="mage" value="mage">Mage</option>
+                        <option id="wizard" value="wizard">Wizard</option>
+                        <option id="highwizard" value="highwizard">High Wizard</option>
+                        <option id="sage" value="sage">Sage</option>
+                        <option id="professor" value="professor">Professor/Scholar</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="taekwon" value="taekwon">Taekwon</option>
+                        <option id="stargladiator" value="stargladiator">Star Gladiator</option>
+                        <option id="soullinker" value="soullinker">Soul Linker</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="ninja" value="ninja">Ninja</option>
+                        <option id="kagerou" value="kagerou">Kagerou</option>
+                        <option id="oboro" value="oboro">Oboro</option>
+                        <option value="none" disabled="disabled">===============</option>
+                        <option id="gunslinger" value="gunslinger">Gunslinger</option>
+                        <!-- <option id="rebellion" value="rebellion">Rebellion</option> -->
+                    </select>
+                </div>
             </div>
             <div class="gender">
                 <div class="gender-male">
@@ -315,16 +331,6 @@
                         <li class="stats-info-operation" id="stats-info__operation aspd">
                             <p>Aspd</p>
                             <p id="stats-info__operation">(Sum)Stat</p>
-                        </li>
-                    </ul>
-                    <ul class="more-info">
-                        <li class="other-stats">
-                            <p>Status Point</p>
-                            <p id="other-info">(Number)Stats Point</p>
-                        </li>
-                        <li class="other-stats">
-                            <p>Guild</p>
-                            <p id="other-info">Guild Name</p>
                         </li>
                     </ul>
                 </div>

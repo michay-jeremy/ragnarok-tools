@@ -83,6 +83,17 @@
         }
     }
 
+    .level-select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .base-level_select {
+            margin-right: 10px;
+        }
+    }
+
     .container-select {
         display: flex;
         justify-content: center;
@@ -195,6 +206,7 @@
 
             .stats-info_status {
                 border: 1px solid black;
+
                 li.stat {
                     display: flex;
                     align-items: center;
@@ -204,12 +216,6 @@
             }
 
             .stats-info_information {
-                border: 1px solid black;
-                padding: 3px 2px;
-            }
-
-
-            .more-info {
                 border: 1px solid black;
                 padding: 3px 2px;
             }

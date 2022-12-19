@@ -101,6 +101,15 @@ li {
   padding: 1px 3px;
   box-sizing: border-box;
 }
+.container .level-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container .level-select .base-level_select {
+  margin-right: 10px;
+}
 .container .container-select {
   display: flex;
   justify-content: center;
@@ -206,10 +215,6 @@ li {
   border-top: 1px solid black;
 }
 .container .calculator-stats .stats-info_information {
-  border: 1px solid black;
-  padding: 3px 2px;
-}
-.container .calculator-stats .more-info {
   border: 1px solid black;
   padding: 3px 2px;
 }/*# sourceMappingURL=style.css.map */
