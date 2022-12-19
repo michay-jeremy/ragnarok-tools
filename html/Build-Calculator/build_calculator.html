@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/calculator.css/style.css">
+    <title>Ragnarok Online Build Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="" class="logo">
+                <img src="../../img/logo_ragnarok.png" alt="logo">
+            </a>
+            <a href="" class="head-button">Calculator</a>
+            <a href="" class="head-button">Item Database</a>
+            <a href="" class="head-button">Monster Database</a>
+            <a href="" class="head-button">Pet Database</a>
+            <a href="" class="head-button">World Map</a>
+            <a href="" class="discord">
+                <i class="fa-brands fa-discord discord-logo"></i>
+            </a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="container">
+            <div class="container-saveandload">
+                <i class="fa-solid fa-download">
+                    <p>Save & Load</p>
+                </i>
+                <div class="container-saveandload__select">
+                    <div class="saveandload__select">
+                        <input class="saveandload__button" type="button" id="full-save" name="full-save"
+                            value="Full Save">
+                        <select class="save__select" name="save-select" id="save-select">
+                            <option id="save01" value="save1">Save1: No Data</option>
+                            <option id="save02" value="save2">Save2: No Data</option>
+                            <option id="save03" value="save3">Save3: No Data</option>
+                            <option id="save04" value="save4">Save4: No Data</option>
+                            <option id="save05" value="save5">Save5: No Data</option>
+                            <option id="save06" value="save6">Save6: No Data</option>
+                            <option id="save07" value="save7">Save7: No Data</option>
+                            <option id="save08" value="save8">Save8: No Data</option>
+                            <option id="save09" value="save9">Save9: No Data</option>
+                            <option id="save10" value="save10">Save10: No Data</option>
+                            <option id="save11" value="save11">Save11: No Data</option>
+                            <option id="save12" value="save12">Save12: No Data</option>
+                            <option id="save13" value="save13">Save13: No Data</option>
+                            <option id="save14" value="save14">Save14: No Data</option>
+                            <option id="save15" value="save15">Save15: No Data</option>
+                            <option id="save16" value="save16">Save16: No Data</option>
+                            <option id="save17" value="save17">Save17: No Data</option>
+                            <option id="save18" value="save18">Save18: No Data</option>
+                            <option id="save19" value="save19">Save19: No Data</option>
+                        </select>
+                        <input class="saveandload__button" type="button" id="full-load" name="full-load"
+                            value="Full Load">
+                        <input class="saveandload__button" type="button" id="delete-save" name="delete-save" value="Delete selected save">
+                    </div>
+                    <div class="saveandload__url">
+                        <div class="save-as-url">
+                        <input class="saveandload__button" type="button" id="save-url" name="save_url" value="Save as URL">
+                        <input class="saveandload__text" type="text" placeholder="(When cliking 'Save as URL' button, your character's URL will apear here)">
+                        </div>
+                        <div class="load-url">
+                            <input class="saveandload__button" type="button" id="load-url" name="save_url" value="Load URL from another calc">
+                            <input class="saveandload__text" type="text" placeholder="(Paste here a saved character's URL from another ragnarok calc, then press the button)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-title">
+                <p>Ragnarok Online Build Calculator</p>
+            </div>
+            <div class="container-episode">
+                <p class="episode-title">Episode</p>
+                <p class="episode-desc">10.4</p>
+            </div>
+            <div class="container-select">
+                <label for="classe-select">Choose a job classe:</label>
+                <select name="classe" id="classe-select">
+                    <option value="none" disabled="disabled">-- Select a job classe--</option>
+                    <option id="novice" value="novice">Novice</option>
+                    <option id="supernovice" value="supernovice">Super Novice</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="swordman" value="swordman">Swordman</option>
+                    <option id="knight" value="knight">Knight</option>
+                    <option id="lordknight" value="lordknight">Lord Knight</option>
+                    <option id="crusader" value="crusader">Crusader</option>
+                    <option id="paladin" value="paladin">Paladin</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="thief" value="thief">Thief</option>
+                    <option id="assassin" value="assassin">Assassin</option>
+                    <option id="assassincross" value="assassincross">Assassin Cross</option>
+                    <option id="rogue" value="rogue">Rogue</option>
+                    <option id="stalker" value="stalker">Stalker</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="merchant" value="merchant">Merchant</option>
+                    <option id="blacksmith" value="blacksmith">Blacksmith</option>
+                    <option id="whitesmith" value="whitesmith">Whitesmith/Mastersmith</option>
+                    <option id="alchemist" value="alchemist">Alchemist</option>
+                    <option id="creator" value="creator">Creator/Biochemist</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="acolyte" value="acolyte">Acolyte</option>
+                    <option id="priest" value="priest">Priest</option>
+                    <option id="highpriest" value="highpriest">High Priest</option>
+                    <option id="monk" value="monk">Monk</option>
+                    <option id="champion" value="champion">Champion</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="archer" value="archer">Archer</option>
+                    <option id="hunter" value="hunter">Hunter</option>
+                    <option id="sniper" value="sniper">Sniper</option>
+                    <option id="bard" value="bard">Bard</option>
+                    <option id="clown" value="clown">Clown/Minstrel</option>
+                    <option id="dancer" value="dancer">Dancer</option>
+                    <option id="gypsy" value="gypsy">Gypsy</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="mage" value="mage">Mage</option>
+                    <option id="wizard" value="wizard">Wizard</option>
+                    <option id="highwizard" value="highwizard">High Wizard</option>
+                    <option id="sage" value="sage">Sage</option>
+                    <option id="professor" value="professor">Professor/Scholar</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="taekwon" value="taekwon">Taekwon</option>
+                    <option id="stargladiator" value="stargladiator">Star Gladiator</option>
+                    <option id="soullinker" value="soullinker">Soul Linker</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="ninja" value="ninja">Ninja</option>
+                    <option id="kagerou" value="kagerou">Kagerou</option>
+                    <option id="oboro" value="oboro">Oboro</option>
+                    <option value="none" disabled="disabled">===============</option>
+                    <option id="gunslinger" value="gunslinger">Gunslinger</option>
+                    <!-- <option id="rebellion" value="rebellion">Rebellion</option> -->
+                </select>
+            </div>
+            <div class="gender">
+                <div class="gender-male">
+                    <input class="gender-button" type="radio" id="male" name="gender-name" value="male" checked>
+                    <label for="male">
+                        <i class="fa-solid fa-mars"></i>
+                    </label>
+                </div>
+                <div class="gender-female">
+                    <input class="gender-button" type="radio" id="female" name="gender-name" value="female">
+                    <label for="female">
+                        <i class="fa-solid fa-venus"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="calculator">
+                <div class="calculator-character">
+                    <div class="character" id="character-class">
+                        <img src="../../img/sprites/Novice-male-removebg.png" alt="novice male job class">
+                    </div>
+                    <ul class="gear-list">
+                        <div class="gear-left">
+                            <li class="list-item left">
+                                <a href="" class="gear-button">
+                                    <div class="gear left" id="upper-headgear">
+                                    </div>
+                                </a>
+                                <p>head</p>
+                            </li>
+                            <li class="list-item left">
+                                <a href="" class="gear-button">
+                                    <div class="gear left" id="lower-headgear">
+                                    </div>
+                                </a>
+                                <p>head</p>
+                            </li>
+                            <li class="list-item left">
+                                <a href="" class="gear-button">
+                                    <div class="gear left" id="right-hand">
+                                    </div>
+                                </a>
+                                <p>R-hand</p>
+                            </li>
+                            <li class="list-item left">
+                                <a href="" class="gear-button">
+                                    <div class="gear left" id="garment">
+                                    </div>
+                                </a>
+                                <p>robe</p>
+                            </li>
+                            <li class="list-item left">
+                                <a href="" class="gear-button">
+                                    <div class="gear left" id="right-accessory">
+                                    </div>
+                                </a>
+                                <p>accessory</p>
+                            </li>
+                        </div>
+                        <div class="gear-right">
+                            <li class="list-item right">
+                                <p>head</p>
+                                <a href="" class="gear-button">
+                                    <div class="gear right" id="medium-headgear">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item right">
+                                <p>body</p>
+                                <a href="" class="gear-button">
+                                    <div class="gear right" id="armor">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item right">
+                                <p>L-hand</p>
+                                <a href="" class="gear-button">
+                                    <div class="gear right" id="left-hand">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item right">
+                                <p>shoes</p>
+                                <a href="" class="gear-button">
+                                    <div class="gear right" id="shoes">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item right">
+                                <p>accessory</p>
+                                <a href="" class="gear-button">
+                                    <div class="gear right" id="left-accessory">
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="calculator-stats">
+                    <ul class="stats-content">
+                        <li class="str" id="strength"></li>
+                        <li class="agi" id="agility"></li>
+                        <li class="vit" id="vitality"></li>
+                        <li class="int" id="intelligence"></li>
+                        <li class="dex" id="dexterity"></li>
+                        <li class="luk" id="luck"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="" class="foot-button">
+            <a href="">Privacy</a>
+        </a>
+        <a href="" class="foot-button">
+            <a href="">Contact</a>
+        </a>
+        <a href="" class="foot-button">
+            <a href="">Support</a>
+        </a>
+    </footer>
+    <script src="../../js/calculator.js"></script>
+</body>
+
+</html>

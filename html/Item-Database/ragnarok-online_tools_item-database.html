@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ragnarok Online Item Database</title>
+    <link rel="stylesheet" href="./ragnarok-online_tools_item-database.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/database.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="" class="logo">
+                <img src="C:\Users\micha\OneDrive\Bureau\Ragnarok Online Tools\img\logo_ragnarok.png" alt="logo">
+            </a>
+            <a href="" class="head-button">Calculator</a>
+            <a href="" class="head-button">Item Database</a>
+            <a href="" class="head-button">Monster Database</a>
+            <a href="" class="head-button">Pet Database</a>
+            <a href="" class="head-button">World Map</a>
+            <a href="" class="discord">
+                <i class="fa-brands fa-discord discord-logo"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="title">
+        <p>Ragnarok Online Item Database</p>
+    </div>
+
+    <div class="container">
+
+        <div class="primary">
+            <div class="icon">
+                <a class="icon-link" href="">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+                <a class="icon-link" href="">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <a class="icon-link" href="">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="🔎 Search..." />
+                <input class="checkbox" type="checkbox" id="item-description" name="item-description" checked />
+                <label for="item-description">Include item descriptions</label>
+            </div>
+        </div>
+
+        <div class="secondary">
+            <h2 class="h2-list_armor">Armor</h2>
+            <div class="class_item">
+                <label for="upper_headgear"><input type="radio" id="upper_headgear" name="armor" value="upper_headgear">Upper Headgear</label>
+                <label for="middle_headgear"><input type="radio" id="middle_headgear" name="armor" value="middle_headgear">Middle Headgear</label>
+                <label for="lower_headgear"><input type="radio" id="lower_headgear" name="armor" value="lower_headgear">Lower Headgear</label>
+                <label for="upper_middle_headgear"><input type="radio" id="upper_middle_headgear" name="armor" value="upper_middle_headgear">Upper & Middle Headgear</label>
+                <label for="middle_lower_headgear"><input type="radio" id="middle_lower_headgear" name="armor" value="middle_lower_headgear">Middle & Lower Headgear</label>
+                <label for="upper_lower_headgear"><input type="radio" id="upper_lower_headgear" name="armor" value="upper_lower_headgear">Upper & Lower Headgear</label>
+                <label for="u_m_l_headgear"><input type="radio" id="u_m_l_headgear" name="armor" value="u_m_l_headgear">U, M & L Headgear</label>
+                <label for="armor"><input type="radio" id="armor" name="armor" value="armor">Armor</label>
+                <label for="shield"><input type="radio" id="shield" name="armor" value="shield">Shield</label>
+                <label for="garment"><input type="radio" id="garment" name="armor" value="garment">Garment</label>
+                <label for="footgear"><input type="radio" id="footgear" name="armor" value="footgear">Footgear</label>
+                <label for="accessory"><input type="radio" id="accessory" name="armor" value="accessory">Accessory</label>
+                <label for="costume_upper_headgear"><input type="radio" id="costume_upper_headgear" name="armor" value="costume_upper_headgear">Costume Upper Headgear</label>
+                <label for="costume_middle_headgear"><input type="radio" id="costume_middle_headgear" name="armor" value="costume_middle_headgear">Costume Middle Headgear</label>
+                <label for="costume_lower_headgear"><input type="radio" id="costume_lower_headgear" name="armor" value="costume_lower_headgear">Costume Lower Headgear</label>
+                <label for="costume_upper_middle_headgear"><input type="radio" id="costume_upper_middle_headgear" name="armor" value="costume_upper_middle_headgear">Costume Upper & Middle Headgear</label>
+                <label for="costume_upper_lower_headgear"><input type="radio" id="costume_upper_lower_headgear" name="armor" value="costume_upper_lower_headgear">Costume Upper & Lower Headgear</label>
+                <label for="costume_middle_lower_headgear"><input type="radio" id="costume_middle_lower_headgear" name="armor" value="costume_middle_lower_headgear">Costume Middle & Lower Headgear</label>
+                <label for="costume_u_m_l_headgear"><input type="radio" id="costume_u_m_l_headgear" name="armor" value="costume_u_m_l_headgear">Costume U, M & L Headgear</label>
+            </div>
+
+            <h2 class="h2-list">Weapons</h2>
+            <div class="class_item">
+                <label for="dagger"><input type="radio" id="dagger" name="weapon" value="dagger">Dagger</label>
+                <label for="one-handed_sword"><input type="radio" id="one-handed_sword" name="weapon" value="one-handed_sword">One-Handed Sword</label>
+                <label for="two-handed_sword"><input type="radio" id="two-handed_sword" name="weapon" value="two-handed_sword">Two-Handed Sword</label>
+                <label for="one-handed_spear"><input type="radio" id="one-handed_spear" name="weapon" value="one-handed_spear">One-Handed Spear</label>
+                <label for="two-handed_spear"><input type="radio" id="two-handed_spear" name="weapon" value="two-handed_spear">Two-Handed Spear</label>
+                <label for="one-handed_axe"><input type="radio" id="one-handed_axe" name="weapon" value="one-handed_axe">One-Handed Axe</label>
+                <label for="two-handed_axe"><input type="radio" id="two-handed_axe" name="weapon" value="two-handed_axe">Two-Handed Axe</label>
+                <label for="mace"><input type="radio" id="mace" name="weapon" value="mace">Mace</label>
+                <label for="one-handed_staff"><input type="radio" id="one-handed_staff" name="weapon" value="one-handed_staff">One-Handed Staff</label>
+                <label for="two-handed_staff"><input type="radio" id="two-handed_staff" name="weapon" value="two-handed_staff">Two-Handed Staff</label>
+                <label for="bow"><input type="radio" id="bow" name="weapon" value="bow">Bow</label>
+                <label for="knuckle"><input type="radio" id="knuckle" name="weapon" value="knuckle">Knuckle</label>
+                <label for="musical_instrument"><input type="radio" id="musical_instrument" name="weapon" value="musical_instrument">Musical Instrument</label>
+                <label for="whip"><input type="radio" id="whip" name="weapon" value="whip">Whip</label>
+                <label for="book"><input type="radio" id="book" name="weapon" value="book">Book</label>
+                <label for="katar"><input type="radio" id="katar" name="weapon" value="katar">Katar</label>
+                <label for="revolver"><input type="radio" id="revolver" name="weapon" value="revolver">Revolver</label>
+                <label for="rifle"><input type="radio" id="rifle" name="weapon" value="rifle">Rifle</label>
+                <label for="gatling_gun"><input type="radio" id="gatling_gun" name="weapon" value="gatling_gun">Gatling Gun</label>
+                <label for="shotgun"><input type="radio" id="shotgun" name="weapon" value="shotgun">Shotgun</label>
+                <label for="grenade_launcher"><input type="radio" id="grenade_launcher" name="weapon" value="grenade_launcher">Grenade Launcher</label>
+                <label for="fuuma_shuriken"><input type="radio" id="fuuma_shuriken" name="weapon" value="fuuma_shuriken">Fuuma Shuriken</label>
+            </div>
+
+            <h2 class="h2-list">Card</h2>
+            <div class="class_item">
+                <label for="armor_card"><input type="radio" id="armor_card" name="card" value="armor_card">Armor</label>
+                <label for="headgear_card"><input type="radio" id="headgear_card" name="card" value="headgear_card">Headgear</label>
+                <label for="weapon_card"><input type="radio" id="weapon_card" name="card" value="weapon_card">Weapons</label>
+                <label for="shield_card"><input type="radio" id="shield_card" name="card" value="shield_card">Shield</label>
+                <label for="garment_card"><input type="radio" id="garment_card" name="card" value="garment_card">Garment</label>
+                <label for="accessory_card"><input type="radio" id="accessory_card" name="card" value="accessory_card">Accessory</label>
+                <label for="footgear_card"><input type="radio" id="footgear_card" name="card" value="footgear_card">Footgear</label>
+            </div>
+
+            <h2 class="h2-list">Ammunition</h2>
+            <div class="class_item">
+                <label for="arrow"><input type="radio" id="arrow" name="ammunition" value="arrow">Arrow</label>
+                <label for="throwing_dagger"><input type="radio" id="throwing_dagger" name="ammunition" value="throwing_dagger">Throwing Dagger</label>
+                <label for="bullet"><input type="radio" id="bullet" name="ammunition" value="bullet">Bullet</label>
+                <label for="grenade"><input type="radio" id="grenade" name="ammunition" value="grenade">Grenade</label>
+                <label for="shuriken"><input type="radio" id="shuriken" name="ammunition" value="shuriken">Shuriken</label>
+                <label for="kunai"><input type="radio" id="kunai" name="ammunition" value="kunai">Kunai</label>
+                <!--3rd merchant class <li>Cannon Ball</li> -->
+            </div>
+
+            <h2 class="h2-list">Other</h2>
+            <div class="class_item">
+                <label for="usable_item"><input type="radio" id="usable_item" name="other" value="usable_item">Usable Item</label>
+                <label for="healing_item"><input type="radio" id="healing_item" name="other" value="healing_item">Healing Item</label>
+                <label for="delayed_item"><input type="radio" id="delayed_item" name="other" value="delayed_item">Delayed Item</label>
+                <label for="taming_item"><input type="radio" id="taming_item" name="other" value="taming_item">Taming Item</label>
+                <label for="pet_armor"><input type="radio" id="pet_armor" name="other" value="pet_armor">Pet Armor</label>
+                <label for="monster_egg"><input type="radio" id="monster_egg" name="other" value="monster_egg">Monster Egg</label>
+                <label for="cash-shop_item"><input type="radio" id="cash-shop_item" name="other" value="cash-shop_item">Cash Shop Item</label>
+            </div>
+
+            <h2 class="h2-list">Guides</h2>
+            <ul class="guides_item">
+                <li><a href="#">Headgear Quests</a></li>
+                <li><a href="#">Mixing Quests</a></li>
+                <li><a href="#">Combo Items & Cards</a></li>
+            </ul>
+
+            <h2 class="h2-list">Random Item Generation</h2>
+            <ul class="guides_item">
+                <li><a href="#"><img src="old_blue_box.jpg" alt="old_blue_box">Old Blue Box</a></li>
+                <li><a href="#"><img src="old_violet_box.jpg" alt="old_violet_box">Old Violet Box</a></li>
+                <li><a href="#"><img src="old_card_album.jpg" alt="old_card_album">Old Card Album</a></li>
+                <li><a href="#"><img src="mystical_card_album.jpg" alt="mystical_card_album">Mystical Card Album</a>
+                </li>
+                <li><a href="#"><img src="gift_box.jpg" alt="gift_box">Gift Box</a></li>
+                <li><a href="#"><img src="ore_discovery.jpg" alt="ore_discovery">Ore Discovery</a></li>
+                <li><a href="#"><img src="wrapped_mask.jpg" alt="wrapped_mask">Wrapped Mask</a></li>
+                <li><a href="#"><img src="jewelry_box.jpg" alt="jewelry_box">Jewelry Box</a></li>
+            </ul>
+
+
+            <h2 class="h2-list">Random Monster Generation</h2>
+            <ul class="guides_item">
+                <li><a href="#"><img src="dead_branch.jpg" alt="dead_branch">Dead Branch</a></li>
+                <li><a href="#"><img src="bloody_branch.jpg" alt="bloody_branch">Bloody Branch</a></li>
+            </ul>
+
+
+            <h2 class="h2-list">Misc Tables</h2>
+            <ul class="guides_item">
+                <li><a href="#">Mob Size VS Weapon Type</a></li>
+                <li><a href="#">Refine Success Rates</a></li>
+                <li><a href="#">Property Chart</a></li>
+            </ul>
+        </div>
+
+        <div class="tertiary">
+            <h2 class="jobs">Applicable Jobs</h2>
+            <p class="jobs-tips">
+                (Rebirth are auto included from selecting the base 2-1/2-2 job.
+                Ex. Select 'Knight' will include 'Lord Knight' unless changing the next option.)
+            </p>
+            <div class="job_classes">
+                <label for="any_classes"><input type="radio" id="any_classes" name="classes" value="any_classes">Any Job Classes</label>
+                <label for="novice"><input type="radio" id="novice" name="classes" value="novice">Novice (& Supernovice)</label>
+                <label for="swordman"><input type="radio" id="swordman" name="classes" value="swordman">Swordman</label>
+                <label for="mage"><input type="radio" id="mage" name="classes" value="mage">Mage</label>
+                <label for="archer"><input type="radio" id="archer" name="classes" value="archer">Archer</label>
+                <label for="acolyte"><input type="radio" id="acolyte" name="classes" value="acolyte">Acolyte</label>
+                <label for="merchant"><input type="radio" id="merchant" name="classes" value="merchant">Merchant</label>
+                <label for="thief"><input type="radio" id="thief" name="classes" value="thief">Thief</label>
+                <label for="knight"><input type="radio" id="knight" name="classes" value="knight">Knight</label>
+                <label for="priest"><input type="radio" id="priest" name="classes" value="priest">Priest</label>
+                <label for="wizard"><input type="radio" id="wizard" name="classes" value="wizard">Wizard</label>
+                <label for="blacksmith"><input type="radio" id="blacksmith" name="classes" value="blacksmith">Blacksmith</label>
+                <label for="hunter"><input type="radio" id="hunter" name="classes" value="hunter">Hunter</label>
+                <label for="assassin"><input type="radio" id="assassin" name="classes" value="assassin">Assassin</label>
+                <label for="crusader"><input type="radio" id="crusader" name="classes" value="crusader">Crusader</label>
+                <label for="monk"><input type="radio" id="monk" name="classes" value="monk">Monk</label>
+                <label for="sage"><input type="radio" id="sage" name="classes" value="sage">Sage</label>
+                <label for="rogue"><input type="radio" id="rogue" name="classes" value="rogue">Rogue</label>
+                <label for="alchemist"><input type="radio" id="alchemist" name="classes" value="alchemist">Alchemist</label>
+                <label for="bard_dancer"><input type="radio" id="bard_dancer" name="classes" value="bard_dancer">Bard / Dancer</label>
+                <label for="taekwon"><input type="radio" id="taekwon" name="classes" value="taekwon">Taekwon</label>
+                <label for="star_gladiator"><input type="radio" id="star_gladiator" name="classes" value="star_gladiator">Star Gladiator</label>
+                <label for="soul_linker"><input type="radio" id="soul_linker" name="classes" value="soul_linker">Soul Linker</label>
+                <label for="gunslinger"><input type="radio" id="gunslinger" name="classes" value="gunslinger">Gunslinger</label>
+                <label for="ninja"><input type="radio" id="ninja" name="classes" value="ninja">Ninja</label>
+                <!--2nd ninja class <li>Kagerou / Oboro</li> -->
+                <!--2nd gunslinger class <li>Rebellion</li> -->
+            </div>
+        </div>
+
+        <div class="more-filter">
+            <div>
+                <p class="item-id">Item ID is:</p>
+                <p class="tips">(must be exact ID, will override all other search criteria.)</p>
+                <input class="search" type="text" placeholder="Search..." />
+            </div>
+
+            <div>
+                <p class="item-slot">Item Slot:</p>
+                <select name="slot-one" id="slot-one">
+                    <option value="none">- Any -</option>
+                    <option value="equal">=</option>
+                    <option value="inferior or equal">>=</option>
+                    <option value="superior or equal"><=</option>
+                </select>
+                <select name="slot-two" id="slot-two">
+                    <option value="none">- Any -</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="item-script">Item Script Containing:</p>
+                <p class="tips">(3-40 chars, blank means any script)</p>
+                <input class="search" type="text" placeholder="Search..." />
+            </div>
+
+            <div>
+                <p class="item-element">Items that affect this Element:</p>
+                <select id="affect" name="affect">
+                    <option value="none">-- Any or None --</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="water">Water</option>
+                    <option value="earth">Earth</option>
+                    <option value="fire">Fire</option>
+                    <option value="wind">Wind</option>
+                    <option value="poison">Poison</option>
+                    <option value="holy">Holy</option>
+                    <option value="darkness-shadow">Darkness / Shadow</option>
+                    <option value="sense-ghost">Sense / Ghost</option>
+                    <option value="immortality-undead">Immortality / Undead</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="item-status">Items that affect this Status:</p>
+                <select name="affect" id="affect">
+                    <option value="none">-- Any or None --</option>
+                    <option value="stone">Stone</option>
+                    <option value="freeze">Freeze</option>
+                    <option value="stun">Stun</option>
+                    <option value="sleep">Sleep</option>
+                    <option value="poison">Poison</option>
+                    <option value="curse">Curse</option>
+                    <option value="silence">Silence</option>
+                    <option value="confusion">Confusion</option>
+                    <option value="blind">Blind</option>
+                    <option value="bleeding">Bleeding</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="item-race">Items that affect this Race:</p>
+                <select name="affect" id="affect">
+                    <option value="none">-- Any or None --</option>
+                    <option value="formless">Formless</option>
+                    <option value="undead">Undead</option>
+                    <option value="brute">Brute</option>
+                    <option value="plant">Plant</option>
+                    <option value="insect">Insect</option>
+                    <option value="fish">Fish</option>
+                    <option value="demon">Demon</option>
+                    <option value="demi-human">Demi-Human</option>
+                    <option value="angel">Angel</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="boss-monster">Boss Monster</option>
+                    <option value="normal-monster">Normal Monster</option>
+                    <option value="player">Player</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="item-stats">Items that:</p>
+                <select name="affect" id="affect">
+                    <option value="none">With or Without Effect</option>
+                    <option value="str">affect STR</option>
+                    <option value="agi">affect AGI</option>
+                    <option value="vit">affect VIT</option>
+                    <option value="int">affect INT</option>
+                    <option value="dex">affect DEX</option>
+                    <option value="luk">affect LUK</option>
+                    <option value="every-stats">affect Every Stats</option>
+                    <option value="maxhp-hpreco">affect max HP or HP Recovery</option>
+                    <option value="maxsp-spreco">affect max SP or SP Recovery</option>
+                    <option value="gain-drain-hp">Gain or Drain HP</option>
+                    <option value="gain-drain-sp">Gain or Drain SP</option>
+                    <option value="attack">affect Attack</option>
+                    <option value="damage-conditions">affect damage on conditions</option>
+                    <option value="magic-attack-damage">affect Magic Attack or Magic Damage</option>
+                    <option value="defense">affect Defense</option>
+                    <option value="magic-defense">affect Magic Defense</option>
+                    <option value="hit">affect HIT</option>
+                    <option value="critical">affect Critical</option>
+                    <option value="flee-dodge">affect Flee and Dodge</option>
+                    <option value="cast-time">affect Cast Time</option>
+                    <option value="auto-cast">will auto cast a spell</option>
+                    <option value="moving-speed">affect Moving Speed</option>
+                    <option value="attack-speed">affect Attack Speed</option>
+                    <option value="ignore-def-mdef">ignore Defense or Magic Defense</option>
+                    <option value="monster-size">+/- damage relative to monster size</option>
+                    <option value="enemies-status">affect enemies status</option>
+                    <option value="kill-when-equiped">will obtain an item from kill when equiped</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="card-pre_suffix">Card Pre/Suffix Containing:</p>
+                <p class="tips">(3-40 chars, blank means any)</p>
+                <input class="search" type="text" placeholder="Search..." />
+            </div>
+
+            <div>
+                <p class="hide-items">Hide items that are not dropped by monster?</p>
+                <input class="checkbox" type="checkbox" id="item-drop" name="item-drop" />
+            </div>
+
+            <div>
+                <p class="result">Sort result by:</p>
+                <select name="sort-result" id="sort-result">
+                    <option value="none">Item Name</option>
+                    <option value="item-type">Item Type</option>
+                    <option value="attack">Attack</option>
+                    <option value="defense">Defense</option>
+                    <option value="range">Range</option>
+                    <option value="weapon-level">Weapon Level</option>
+                    <option value="required-level">Required Level</option>
+                    <option value="weight">Weight</option>
+                    <option value="equip-location">Equip Location</option>
+                    <option value="item-id">Item ID</option>
+                    <option value="item-price">Item Price</option>
+                </select>
+                <select name="sort-result" id="sort-result">
+                    <option value="none">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="search_result">
+            <div class="memorize-filter">
+                <div class="magnifiying-glass">
+                        <a class="magnify-button" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="foot-button">
+            <a href="#">Privacy</a>
+        </p>
+        <p class="foot-button">
+            <a href="#">Contact</a>
+        </p>
+        <p class="foot-button">
+            <a href="#">Support</a>
+        </p>
+    </footer>
+
+    <script src="./database.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

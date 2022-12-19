@@ -1,0 +1,192 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} /*# sourceMappingURL=reset.css.map */
+@media screen and (min-width: 365px) {
+  .header {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logo {
+    width: 15%;
+  }
+  .header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .head-button {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+}
+.container {
+  width: 100%;
+}
+.container .container-saveandload {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.container .container-saveandload i {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container .container-saveandload .saveandload__text {
+  width: 210px;
+}
+.container .container-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-title p {
+  font-size: 18px;
+}
+.container .container-episode {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-episode .episode-title {
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 1px 3px;
+  box-sizing: border-box;
+  border-right: none;
+}
+.container .container-episode .episode-desc {
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 1px 3px;
+  box-sizing: border-box;
+}
+.container .container-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.container .gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container .calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .calculator .calculator-character {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 350px;
+}
+.container .calculator .character {
+  position: absolute;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .calculator .gear-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+.container .calculator .list-item {
+  display: flex;
+  position: relative;
+}
+.container .calculator .list-item.left {
+  justify-content: flex-start;
+  padding-bottom: 3px;
+  padding-top: 6px;
+}
+.container .calculator .list-item.left:first-child {
+  padding-top: 0;
+}
+.container .calculator .list-item.right {
+  justify-content: flex-end;
+  padding-bottom: 3px;
+  padding-top: 6px;
+}
+.container .calculator .list-item.right:first-child {
+  padding-top: 0;
+}
+.container .calculator .list-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+}
+.container .calculator .gear {
+  display: flex;
+  width: 25px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.container .calculator .gear.left {
+  margin-right: 5px;
+}
+.container .calculator .gear.right {
+  margin-left: 5px;
+}
+.container .calculator .gear.button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

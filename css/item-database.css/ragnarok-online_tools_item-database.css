@@ -1,0 +1,390 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+body {
+    background: url(ro-priest-background.jpg) no-repeat center center;
+}
+
+.home {
+    min-width: 60px;
+    height: 100%;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    padding-top: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.nav-button>h1>a:hover {
+    color: #4f88dc;
+}
+
+.join-discord>a:hover {
+    color: #4f88dc;
+}
+
+.head-button {
+    height: 26px;
+    font-size: 18px;
+    white-space: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.join-discord {
+    position: relative;
+}
+
+.fa-brands.fa-discord {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    font-size: 25px;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.title {
+    margin-top: 75px;
+    color: #4f88dc;
+    font-size: 22px;
+    margin-left: 16px;
+    text-shadow: 0 0 3px #0c68b5;
+    margin-bottom: 20px;
+}
+
+.primary {
+    background-color: #94C4EC;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.icon {
+    display: flex;
+    padding: 10px;
+    width: 235px;
+}
+
+.icon-link+.icon-link {
+    padding-left: 15px;
+    color: #fff;
+}
+
+.icon-link:hover {
+    color: #4f88dc;
+}
+
+.secondary-filter {
+    width: 24px;
+}
+
+.primary-filter {
+    width: 24px;
+}
+
+.secondary {
+    padding: 16px;
+    background-color: #94C4EC;
+    color: #fff;
+    width: 275px;
+    height: 378px;
+    border-right: 1px solid #fff;
+    display: inline-block;
+    overflow-y: auto;
+}
+
+.job_classes {
+    display: grid;
+}
+
+.class_item {
+    display: grid;
+}
+
+label {
+    color: #4f88dc;
+}
+
+input[name=armor] {
+    transform: translateX(0px) translateY(0px);
+}
+
+.tertiary {
+    background-color: #94C4EC;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    height: 380px;
+    width: 230px;
+    overflow-y: auto;
+}
+
+.jobs-tips {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.more-filter {
+    color: #fff;
+    background-color: #94C4EC;
+    display: inline-block;
+    vertical-align: top;
+    height: 380px;
+    width: 350px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.item-id {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.tips {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.item-slot {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.slot-one {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slot-two {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-script {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.item-element {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.item-status {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.item-race {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.item-stats {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.card-pre_suffix {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.hide-items {
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.result {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+.search-button {
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+}
+
+.h2-list {
+    padding-top: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.class_item {
+    padding-top: 10px;
+}
+
+.class_item>li>a {
+    color: #4f88dc;
+}
+
+.guides_item {
+    padding-top: 10px;
+}
+
+.guides_item>li>a {
+    color: gold;
+}
+
+p {
+    margin: 0;
+}
+
+.fa-solid.fa-house-chimney {
+    font-size: 16px;
+    color: #fff;
+}
+
+.fa-solid.fa-house-chimney:hover {
+    color: #4f88dc;
+}
+
+.memorize-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 40%!important;
+    margin-right: 0!important;
+    margin-top: 100%;
+}
+
+.magnifying-glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.magnify-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.fa-solid.fa-magnifying-glass {
+    background-color: transparent;
+    color: #4f88dc;
+    font-size: 25px;
+}
+
+.search_result {
+    background-color: #94C4EC;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    height: 380px;
+    width: 300px;
+    overflow-y: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+    height: 25px;
+    width: auto;
+}
+
+.container {
+    background-color: #94C4EC;
+    opacity: 0.7;
+    width: 1300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/**
+ * For MOBILE
+ */
+/*@media screen and (max-width: 980px) {
+    h2 {
+        color: red !important;
+    }
+}*/
