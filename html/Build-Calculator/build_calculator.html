@@ -61,16 +61,21 @@
                         </select>
                         <input class="saveandload__button" type="button" id="full-load" name="full-load"
                             value="Full Load">
-                        <input class="saveandload__button" type="button" id="delete-save" name="delete-save" value="Delete selected save">
+                        <input class="saveandload__button" type="button" id="delete-save" name="delete-save"
+                            value="Delete selected save">
                     </div>
                     <div class="saveandload__url">
                         <div class="save-as-url">
-                        <input class="saveandload__button" type="button" id="save-url" name="save_url" value="Save as URL">
-                        <input class="saveandload__text" type="text" placeholder="(When cliking 'Save as URL' button, your character's URL will apear here)">
+                            <input class="saveandload__button" type="button" id="save-url" name="save_url"
+                                value="Save as URL">
+                            <input class="saveandload__text" type="text"
+                                placeholder="(When cliking 'Save as URL' button, your character's URL will apear here)">
                         </div>
                         <div class="load-url">
-                            <input class="saveandload__button" type="button" id="load-url" name="save_url" value="Load URL from another calc">
-                            <input class="saveandload__text" type="text" placeholder="(Paste here a saved character's URL from another ragnarok calc, then press the button)">
+                            <input class="saveandload__button" type="button" id="load-url" name="save_url"
+                                value="Load URL from another calc">
+                            <input class="saveandload__text" type="text"
+                                placeholder="(Paste here a saved character's URL from another ragnarok calc, then press the button)">
                         </div>
                     </div>
                 </div>
@@ -235,14 +240,92 @@
                         </div>
                     </ul>
                 </div>
-                <div class="calculator-stats">
-                    <ul class="stats-content">
-                        <li class="str" id="strength"></li>
-                        <li class="agi" id="agility"></li>
-                        <li class="vit" id="vitality"></li>
-                        <li class="int" id="intelligence"></li>
-                        <li class="dex" id="dexterity"></li>
-                        <li class="luk" id="luck"></li>
+            </div>
+            <div class="calculator-stats">
+                <div class="stats-item">
+                    <ul class="stats-info_status">
+                        <li class="stat str" id="strength">
+                            <p>STR</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="strength_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                        <li class="stat agi" id="agility">
+                            <p>AGI</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="agility_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                        <li class="stat vit" id="vitality">
+                            <p>VIT</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="vitality_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                        <li class="stat int" id="intelligence">
+                            <p>INT</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="intelligence_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                        <li class="stat dex" id="dexterity">
+                            <p>DEX</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="dexterity_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                        <li class="stat luk" id="luck">
+                            <p>LUK</p>
+                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            <input type="button" class="stats_button" id="luck_button">
+                            <p id="stats-point">(Number)Require Stats Point</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stats-info">
+                    <ul class="stats-info_information">
+                        <li class="stats-info-operation">
+                            <p>Atk</p>
+                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation">
+                            <p>Def</p>
+                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation">
+                            <p>Matk</p>
+                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation">
+                            <p>Mdef</p>
+                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation hit">
+                            <p>Hit</p>
+                            <p id="stats-info__operation">(Sum)Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation">
+                            <p>Flee</p>
+                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation critical">
+                            <p>Critical</p>
+                            <p id="stats-info__operation">(Sum)Stat</p>
+                        </li>
+                        <li class="stats-info-operation" id="stats-info__operation aspd">
+                            <p>Aspd</p>
+                            <p id="stats-info__operation">(Sum)Stat</p>
+                        </li>
+                    </ul>
+                    <ul class="more-info">
+                        <li class="other-stats">
+                            <p>Status Point</p>
+                            <p id="other-info">(Number)Stats Point</p>
+                        </li>
+                        <li class="other-stats">
+                            <p>Guild</p>
+                            <p id="other-info">Guild Name</p>
+                        </li>
                     </ul>
                 </div>
             </div>
