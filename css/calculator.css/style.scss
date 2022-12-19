@@ -190,33 +190,28 @@
 
         &-stats {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            margin: 0 5px;
 
-            li {
-                display: flex;
-                p {
-                    border: 1px solid black;
-                }
-            }
-
-            .stats-item{
+            .stats-info_status {
                 border: 1px solid black;
-                border-right: none;
-                padding: 3px 3px;
+                li.stat {
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 2px;
+                    border-top: 1px solid black;
+                }
             }
 
             .stats-info_information {
                 border: 1px solid black;
-                border-left: none;
-                border-bottom: none;
-                padding: 3px 3px;
+                padding: 3px 2px;
             }
+
 
             .more-info {
                 border: 1px solid black;
-                border-left: none;
-                border-top: none;
-                padding: 3px 3px;
+                padding: 3px 2px;
             }
         }
     }

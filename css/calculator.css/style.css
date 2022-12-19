@@ -193,28 +193,23 @@ li {
 }
 .container .calculator-stats {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 5px;
 }
-.container .calculator-stats li {
+.container .calculator-stats .stats-info_status {
+  border: 1px solid black;
+}
+.container .calculator-stats .stats-info_status li.stat {
   display: flex;
-}
-.container .calculator-stats li p {
-  border: 1px solid black;
-}
-.container .calculator-stats .stats-item {
-  border: 1px solid black;
-  border-right: none;
-  padding: 3px 3px;
+  align-items: center;
+  padding: 3px 2px;
+  border-top: 1px solid black;
 }
 .container .calculator-stats .stats-info_information {
   border: 1px solid black;
-  border-left: none;
-  border-bottom: none;
-  padding: 3px 3px;
+  padding: 3px 2px;
 }
 .container .calculator-stats .more-info {
   border: 1px solid black;
-  border-left: none;
-  border-top: none;
-  padding: 3px 3px;
+  padding: 3px 2px;
 }/*# sourceMappingURL=style.css.map */
