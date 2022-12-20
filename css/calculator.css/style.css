@@ -304,4 +304,14 @@ li {
 }
 .other-information .other-info .status-container .status-effect {
   padding-top: 5px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.other-information .other-info .status-container .status-size {
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.other-information .other-info .status-container .status-special {
+  padding-top: 5px;
 }/*# sourceMappingURL=style.css.map */
