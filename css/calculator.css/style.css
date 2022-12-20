@@ -58,6 +58,7 @@ li {
 }
 .container {
   width: 100%;
+  margin-bottom: 15px;
 }
 .container .container-saveandload {
   margin-bottom: 15px;
@@ -214,7 +215,93 @@ li {
   padding: 3px 2px;
   border-top: 1px solid black;
 }
+.container .calculator-stats .stats-info_status li.stat .stats_button-add {
+  background: url(/img/stats-button-add.png) no-repeat center;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.container .calculator-stats .stats-info_status li.stat .stats_button-del {
+  background: url(/img/stats-button-del.png) no-repeat center;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .container .calculator-stats .stats-info_information {
   border: 1px solid black;
   padding: 3px 2px;
+}
+.container .calculator-stats .status {
+  font-weight: bold;
+}
+
+.other-information {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.other-information .other-info {
+  margin: 0 5px;
+  border: 1px solid black;
+}
+.other-information .other-info .other-info_header {
+  border: 1px solid black;
+  padding: 3px 2px;
+}
+.other-information .other-info .status-container {
+  padding: 3px 2px;
+}
+.other-information .other-info .status-container .status-elements {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.other-information .other-info .status-container .status-elements .info-title {
+  margin-bottom: 10px;
+}
+.other-information .other-info .status-container .status-resistance {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+.other-information .other-info .status-container .status-resistance .neutral {
+  color: #C7AE82;
+}
+.other-information .other-info .status-container .status-resistance .water {
+  color: #0082FF;
+}
+.other-information .other-info .status-container .status-resistance .earth {
+  color: #A52A2A;
+}
+.other-information .other-info .status-container .status-resistance .fire {
+  color: #FF0000;
+}
+.other-information .other-info .status-container .status-resistance .wind {
+  color: #008000;
+}
+.other-information .other-info .status-container .status-resistance .poison {
+  color: #7B2488;
+}
+.other-information .other-info .status-container .status-resistance .holy {
+  color: #CDCD40;
+}
+.other-information .other-info .status-container .status-resistance .shadow {
+  color: #000000;
+}
+.other-information .other-info .status-container .status-resistance .ghost {
+  color: #9FA09B;
+}
+.other-information .other-info .status-container .status-resistance .undead {
+  color: #252520;
+}
+.other-information .other-info .status-container .status-type {
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.other-information .other-info .status-container .status-effect {
+  padding-top: 5px;
 }/*# sourceMappingURL=style.css.map */

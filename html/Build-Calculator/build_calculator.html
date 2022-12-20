@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="container-title">
-                <p>Ragnarok Online Build Calculator</p>
+                <h1>Ragnarok Online Build Calculator</h1>
             </div>
             <div class="container-episode">
                 <p class="episode-title">Episode</p>
@@ -261,7 +261,7 @@
                 <div class="stats-item">
                     <ul class="stats-info_status">
                         <li class="stat point-remaining">
-                            <p>Status Points Remaining:</p>
+                            <p><strong>Points Remaining:</strong></p>
                             <p id="status-point-remaining">(Number)48 for base lv 1</p>
                             <!-- Du Base Level:
                             1 - 5: 3 par 3;
@@ -286,78 +286,222 @@
                             95 - 99: 22 par 22; -->
                         </li>
                         <li class="stat str" id="strength">
-                            <p>STR</p>
+                            <p class="status">STR</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="strength_button">
+                            <input type="button" class="stats_button-add" id="strength_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="strength_button-del">
                         </li>
                         <li class="stat agi" id="agility">
-                            <p>AGI</p>
+                            <p class="status">AGI</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="agility_button">
+                            <input type="button" class="stats_button-add" id="agility_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="agility_button-del">
                         </li>
                         <li class="stat vit" id="vitality">
-                            <p>VIT</p>
+                            <p class="status">VIT</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="vitality_button">
+                            <input type="button" class="stats_button-add" id="vitality_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="vitality_button-del">
                         </li>
                         <li class="stat int" id="intelligence">
-                            <p>INT</p>
+                            <p class="status">INT</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="intelligence_button">
+                            <input type="button" class="stats_button-add" id="intelligence_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="intelligence_button-del">
                         </li>
                         <li class="stat dex" id="dexterity">
-                            <p>DEX</p>
+                            <p class="status">DEX</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="dexterity_button">
+                            <input type="button" class="stats_button-add" id="dexterity_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="dexterity_button-del">
                         </li>
                         <li class="stat luk" id="luck">
-                            <p>LUK</p>
+                            <p class="status">LUK</p>
                             <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button" id="luck_button">
+                            <input type="button" class="stats_button-add" id="luck_button-add">
                             <p id="stats-point">(Number)Require Stats Point</p>
+                            <input type="button" class="stats_button-del" id="luck_button-del">
                         </li>
                     </ul>
                 </div>
                 <div class="stats-info">
                     <ul class="stats-info_information">
                         <li class="stats-info-operation">
-                            <p>Atk</p>
+                            <p class="status">Atk</p>
                             <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation">
-                            <p>Def</p>
+                            <p class="status">Def</p>
                             <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation">
-                            <p>Matk</p>
+                            <p class="status">Matk</p>
                             <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation">
-                            <p>Mdef</p>
+                            <p class="status">Mdef</p>
                             <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation hit">
-                            <p>Hit</p>
+                            <p class="status">Hit</p>
                             <p id="stats-info__operation">(Sum)Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation">
-                            <p>Flee</p>
+                            <p class="status">Flee</p>
                             <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation critical">
-                            <p>Critical</p>
+                            <p class="status">Critical</p>
                             <p id="stats-info__operation">(Sum)Stat</p>
                         </li>
                         <li class="stats-info-operation" id="stats-info__operation aspd">
-                            <p>Aspd</p>
+                            <p class="status">Aspd</p>
                             <p id="stats-info__operation">(Sum)Stat</p>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="other-information">
+            <div class="other-info">
+                <div class="other-info_header">
+                    <p><strong>Other Info:</strong></p>
+                </div>
+                <div class="other-info_table">
+                    <div class="status-container">
+                        <ul class="status-elements">
+                            <p class="info-title"><strong>Player Resistance:</strong></p>
+                            <li class="status-resistance">
+                                <p class="neutral">Neutral</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="water">Water</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="earth">Earth</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="fire">Fire</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="wind">Wind</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="poison">Poison</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="holy">Holy</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="shadow">Shadow</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="ghost">Ghost</p>
+                                <p id="status-resistance_operation">(Number) 25% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                <p class="undead">Undead</p>
+                                <p id="status-resistance_operation">(Number) 100% by default</p>
+                            </li>
+                        </ul>
+                        <ul class="status-type">
+                            <li class="status-resistance">
+                                Formless
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Undead
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Brute
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Plant
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Insect
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Fish
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Demon
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Demi-Human
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Angel
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Dragon
+                                <p id="status-resistance_operation">(Number) 0% by default</p>
+                            </li>
+                        </ul>
+                        <ul class="status-effect">
+                            <li class="status-resistance">
+                                Poison
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Stun
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Freeze
+                                <p id="status-resistance_operation">(Number) 3% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Curse
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Blind
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Sleep
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Silence
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Chaos
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Bleeding
+                                <p id="status-resistance_operation">(Number) 4% by default</p>
+                            </li>
+                            <li class="status-resistance">
+                                Stone
+                                <p id="status-resistance_operation">(Number) 3% by default</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

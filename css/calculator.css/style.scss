@@ -32,6 +32,7 @@
 
 .container {
     width: 100%;
+    margin-bottom: 15px;
 
     .container-saveandload {
         margin-bottom: 15px;
@@ -212,12 +213,119 @@
                     align-items: center;
                     padding: 3px 2px;
                     border-top: 1px solid black;
+
+                    .stats_button-add {
+                        background: url(/img/stats-button-add.png) no-repeat center;
+                        cursor: pointer;
+                        width: 13px;
+                        height: 13px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                    .stats_button-del {
+                        background: url(/img/stats-button-del.png) no-repeat center;
+                        cursor: pointer;
+                        width: 13px;
+                        height: 13px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
                 }
             }
 
             .stats-info_information {
                 border: 1px solid black;
                 padding: 3px 2px;
+            }
+
+            .status {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.other-information {
+    width: 100%;
+    margin-bottom: 15px;
+
+    .other-info {
+        margin: 0 5px;
+        border: 1px solid black;
+
+        .other-info_header {
+            border: 1px solid black;
+            padding: 3px 2px;
+        }
+
+        .status-container {
+            padding: 3px 2px;
+
+            .status-elements {
+                border-bottom: 1px solid black;
+                padding-bottom: 5px;
+
+                .info-title {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .status-resistance {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-weight: bold;
+
+                .neutral {
+                    color: #C7AE82;
+                }
+
+                .water {
+                    color: #0082FF;
+                }
+
+                .earth {
+                    color: #A52A2A;
+                }
+
+                .fire {
+                    color: #FF0000;
+                }
+
+                .wind {
+                    color: #008000;
+                }
+
+                .poison {
+                    color: #7B2488;
+                }
+
+                .holy {
+                    color: #CDCD40;
+                }
+
+                .shadow {
+                    color: #000000;
+                }
+
+                .ghost {
+                    color: #9FA09B;
+                }
+
+                .undead {
+                    color: #252520;
+                }
+            }
+
+            .status-type {
+                padding-top: 5px;
+                border-bottom: 1px solid black;
+                padding-bottom: 5px;
+            }
+
+            .status-effect {
+                padding-top: 5px;
             }
         }
     }
