@@ -30,240 +30,245 @@
     </header>
     <main class="main-container">
         <section class="container">
-            <div class="container-saveandload">
-                <i class="fa-solid fa-download">
-                    <p>Save & Load</p>
-                </i>
-                <div class="container-saveandload__select">
-                    <div class="saveandload__select">
-                        <input class="saveandload__button" type="button" id="full-save" name="full-save"
-                            value="Full Save">
-                        <select class="save__select" name="save-select" id="save-select">
-                            <option id="save01" value="save1">Save1: No Data</option>
-                            <option id="save02" value="save2">Save2: No Data</option>
-                            <option id="save03" value="save3">Save3: No Data</option>
-                            <option id="save04" value="save4">Save4: No Data</option>
-                            <option id="save05" value="save5">Save5: No Data</option>
-                            <option id="save06" value="save6">Save6: No Data</option>
-                            <option id="save07" value="save7">Save7: No Data</option>
-                            <option id="save08" value="save8">Save8: No Data</option>
-                            <option id="save09" value="save9">Save9: No Data</option>
-                            <option id="save10" value="save10">Save10: No Data</option>
-                            <option id="save11" value="save11">Save11: No Data</option>
-                            <option id="save12" value="save12">Save12: No Data</option>
-                            <option id="save13" value="save13">Save13: No Data</option>
-                            <option id="save14" value="save14">Save14: No Data</option>
-                            <option id="save15" value="save15">Save15: No Data</option>
-                            <option id="save16" value="save16">Save16: No Data</option>
-                            <option id="save17" value="save17">Save17: No Data</option>
-                            <option id="save18" value="save18">Save18: No Data</option>
-                            <option id="save19" value="save19">Save19: No Data</option>
+            <section class="section-saveandload">
+                <div class="container-saveandload">
+                    <i class="fa-solid fa-download">
+                        <p>Save & Load</p>
+                    </i>
+                    <div class="container-saveandload__select">
+                        <div class="saveandload__select">
+                            <input class="saveandload__button" type="button" id="full-save" name="full-save"
+                                value="Full Save">
+                            <select class="save__select" name="save-select" id="save-select">
+                                <option id="save01" value="save1">Save1: No Data</option>
+                                <option id="save02" value="save2">Save2: No Data</option>
+                                <option id="save03" value="save3">Save3: No Data</option>
+                                <option id="save04" value="save4">Save4: No Data</option>
+                                <option id="save05" value="save5">Save5: No Data</option>
+                                <option id="save06" value="save6">Save6: No Data</option>
+                                <option id="save07" value="save7">Save7: No Data</option>
+                                <option id="save08" value="save8">Save8: No Data</option>
+                                <option id="save09" value="save9">Save9: No Data</option>
+                                <option id="save10" value="save10">Save10: No Data</option>
+                                <option id="save11" value="save11">Save11: No Data</option>
+                                <option id="save12" value="save12">Save12: No Data</option>
+                                <option id="save13" value="save13">Save13: No Data</option>
+                                <option id="save14" value="save14">Save14: No Data</option>
+                                <option id="save15" value="save15">Save15: No Data</option>
+                                <option id="save16" value="save16">Save16: No Data</option>
+                                <option id="save17" value="save17">Save17: No Data</option>
+                                <option id="save18" value="save18">Save18: No Data</option>
+                                <option id="save19" value="save19">Save19: No Data</option>
+                            </select>
+                            <input class="saveandload__button" type="button" id="full-load" name="full-load"
+                                value="Full Load">
+                            <input class="saveandload__button" type="button" id="delete-save" name="delete-save"
+                                value="Delete selected save">
+                        </div>
+                        <div class="saveandload__url">
+                            <div class="save-as-url">
+                                <input class="saveandload__button" type="button" id="save-url" name="save_url"
+                                    value="Save as URL">
+                                <input class="saveandload__text" type="text"
+                                    placeholder="(When cliking 'Save as URL' button, your character's URL will apear here)">
+                            </div>
+                            <div class="load-url">
+                                <input class="saveandload__button" type="button" id="load-url" name="save_url"
+                                    value="Load URL from another calc">
+                                <input class="saveandload__text" type="text"
+                                    placeholder="(Paste here a saved character's URL from another ragnarok calc, then press the button)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-title">
+                <div class="container-title">
+                    <h1>Ragnarok Online Build Calculator</h1>
+                </div>
+                <div class="container-episode">
+                    <p class="episode-title">Episode</p>
+                    <p class="episode-desc">10.4</p>
+                </div>
+            </section>
+            <section class="section_character-simulator">
+                <div class="container-select">
+                    <div class="level-select">
+                        <div class="base-level_select">
+                            <label for="base-level">Base Lv:</label>
+                            <select name="base_level" id="base-level">
+                                <option value="default" id="base-level_option">1</option>
+                            </select>
+                        </div>
+                        <div class="job-level_select">
+                            <label for="job-level">Job Lv:</label>
+                            <select name="job_level" id="job-level">
+                                <option value="default" id="job-level_option">1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="classe-select">Choose a job classe:</label>
+                        <select name="classe" id="classe-select">
+                            <option value="default">-- Select a job classe--</option>
+                            <option id="novice" value="novice">Novice</option>
+                            <option id="supernovice" value="supernovice">Super Novice</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="swordman" value="swordman">Swordman</option>
+                            <option id="knight" value="knight">Knight</option>
+                            <option id="lordknight" value="lordknight">Lord Knight</option>
+                            <option id="crusader" value="crusader">Crusader</option>
+                            <option id="paladin" value="paladin">Paladin</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="thief" value="thief">Thief</option>
+                            <option id="assassin" value="assassin">Assassin</option>
+                            <option id="assassincross" value="assassincross">Assassin Cross</option>
+                            <option id="rogue" value="rogue">Rogue</option>
+                            <option id="stalker" value="stalker">Stalker</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="merchant" value="merchant">Merchant</option>
+                            <option id="blacksmith" value="blacksmith">Blacksmith</option>
+                            <option id="whitesmith" value="whitesmith">Whitesmith/Mastersmith</option>
+                            <option id="alchemist" value="alchemist">Alchemist</option>
+                            <option id="creator" value="creator">Creator/Biochemist</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="acolyte" value="acolyte">Acolyte</option>
+                            <option id="priest" value="priest">Priest</option>
+                            <option id="highpriest" value="highpriest">High Priest</option>
+                            <option id="monk" value="monk">Monk</option>
+                            <option id="champion" value="champion">Champion</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="archer" value="archer">Archer</option>
+                            <option id="hunter" value="hunter">Hunter</option>
+                            <option id="sniper" value="sniper">Sniper</option>
+                            <option id="bard" value="bard">Bard</option>
+                            <option id="clown" value="clown">Clown/Minstrel</option>
+                            <option id="dancer" value="dancer">Dancer</option>
+                            <option id="gypsy" value="gypsy">Gypsy</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="mage" value="mage">Mage</option>
+                            <option id="wizard" value="wizard">Wizard</option>
+                            <option id="highwizard" value="highwizard">High Wizard</option>
+                            <option id="sage" value="sage">Sage</option>
+                            <option id="professor" value="professor">Professor/Scholar</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="taekwon" value="taekwon">Taekwon</option>
+                            <option id="stargladiator" value="stargladiator">Star Gladiator</option>
+                            <option id="soullinker" value="soullinker">Soul Linker</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="ninja" value="ninja">Ninja</option>
+                            <option id="kagerou" value="kagerou">Kagerou</option>
+                            <option id="oboro" value="oboro">Oboro</option>
+                            <option value="none" disabled="disabled">===============</option>
+                            <option id="gunslinger" value="gunslinger">Gunslinger</option>
+                            <!-- <option id="rebellion" value="rebellion">Rebellion</option> -->
                         </select>
-                        <input class="saveandload__button" type="button" id="full-load" name="full-load"
-                            value="Full Load">
-                        <input class="saveandload__button" type="button" id="delete-save" name="delete-save"
-                            value="Delete selected save">
                     </div>
-                    <div class="saveandload__url">
-                        <div class="save-as-url">
-                            <input class="saveandload__button" type="button" id="save-url" name="save_url"
-                                value="Save as URL">
-                            <input class="saveandload__text" type="text"
-                                placeholder="(When cliking 'Save as URL' button, your character's URL will apear here)">
+                </div>
+                <div class="gender">
+                    <div class="gender-male">
+                        <input class="gender-button" type="radio" id="male" name="gender-name" value="male" checked>
+                        <label for="male">
+                            <i class="fa-solid fa-mars"></i>
+                        </label>
+                    </div>
+                    <div class="gender-female">
+                        <input class="gender-button" type="radio" id="female" name="gender-name" value="female">
+                        <label for="female">
+                            <i class="fa-solid fa-venus"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="calculator">
+                    <div class="calculator-character">
+                        <div class="character" id="character-class">
+                            <img src="../../img/sprites/Novice-male-removebg.png" alt="novice male job class">
                         </div>
-                        <div class="load-url">
-                            <input class="saveandload__button" type="button" id="load-url" name="save_url"
-                                value="Load URL from another calc">
-                            <input class="saveandload__text" type="text"
-                                placeholder="(Paste here a saved character's URL from another ragnarok calc, then press the button)">
-                        </div>
+                        <ul class="gear-list">
+                            <div class="gear-left">
+                                <li class="list-item left">
+                                    <a href="" class="gear-button">
+                                        <div class="gear left" id="upper-headgear">
+                                        </div>
+                                    </a>
+                                    <p>head</p>
+                                </li>
+                                <li class="list-item left">
+                                    <a href="" class="gear-button">
+                                        <div class="gear left" id="lower-headgear">
+                                        </div>
+                                    </a>
+                                    <p>head</p>
+                                </li>
+                                <li class="list-item left">
+                                    <a href="" class="gear-button">
+                                        <div class="gear left" id="right-hand">
+                                        </div>
+                                    </a>
+                                    <p>R-hand</p>
+                                </li>
+                                <li class="list-item left">
+                                    <a href="" class="gear-button">
+                                        <div class="gear left" id="garment">
+                                        </div>
+                                    </a>
+                                    <p>robe</p>
+                                </li>
+                                <li class="list-item left">
+                                    <a href="" class="gear-button">
+                                        <div class="gear left" id="right-accessory">
+                                        </div>
+                                    </a>
+                                    <p>accessory</p>
+                                </li>
+                            </div>
+                            <div class="gear-right">
+                                <li class="list-item right">
+                                    <p>head</p>
+                                    <a href="" class="gear-button">
+                                        <div class="gear right" id="medium-headgear">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-item right">
+                                    <p>body</p>
+                                    <a href="" class="gear-button">
+                                        <div class="gear right" id="armor">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-item right">
+                                    <p>L-hand</p>
+                                    <a href="" class="gear-button">
+                                        <div class="gear right" id="left-hand">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-item right">
+                                    <p>shoes</p>
+                                    <a href="" class="gear-button">
+                                        <div class="gear right" id="shoes">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-item right">
+                                    <p>accessory</p>
+                                    <a href="" class="gear-button">
+                                        <div class="gear right" id="left-accessory">
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="container-title">
-                <h1>Ragnarok Online Build Calculator</h1>
-            </div>
-            <div class="container-episode">
-                <p class="episode-title">Episode</p>
-                <p class="episode-desc">10.4</p>
-            </div>
-            <div class="container-select">
-                <div class="level-select">
-                    <div class="base-level_select">
-                        <label for="base-level">Base Lv:</label>
-                        <select name="base_level" id="base-level">
-                            <option value="default" id="base-level_option">1</option>
-                        </select>
-                    </div>
-                    <div class="job-level_select">
-                        <label for="job-level">Job Lv:</label>
-                        <select name="job_level" id="job-level">
-                            <option value="default" id="job-level_option">1</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <label for="classe-select">Choose a job classe:</label>
-                    <select name="classe" id="classe-select">
-                        <option value="default">-- Select a job classe--</option>
-                        <option id="novice" value="novice">Novice</option>
-                        <option id="supernovice" value="supernovice">Super Novice</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="swordman" value="swordman">Swordman</option>
-                        <option id="knight" value="knight">Knight</option>
-                        <option id="lordknight" value="lordknight">Lord Knight</option>
-                        <option id="crusader" value="crusader">Crusader</option>
-                        <option id="paladin" value="paladin">Paladin</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="thief" value="thief">Thief</option>
-                        <option id="assassin" value="assassin">Assassin</option>
-                        <option id="assassincross" value="assassincross">Assassin Cross</option>
-                        <option id="rogue" value="rogue">Rogue</option>
-                        <option id="stalker" value="stalker">Stalker</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="merchant" value="merchant">Merchant</option>
-                        <option id="blacksmith" value="blacksmith">Blacksmith</option>
-                        <option id="whitesmith" value="whitesmith">Whitesmith/Mastersmith</option>
-                        <option id="alchemist" value="alchemist">Alchemist</option>
-                        <option id="creator" value="creator">Creator/Biochemist</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="acolyte" value="acolyte">Acolyte</option>
-                        <option id="priest" value="priest">Priest</option>
-                        <option id="highpriest" value="highpriest">High Priest</option>
-                        <option id="monk" value="monk">Monk</option>
-                        <option id="champion" value="champion">Champion</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="archer" value="archer">Archer</option>
-                        <option id="hunter" value="hunter">Hunter</option>
-                        <option id="sniper" value="sniper">Sniper</option>
-                        <option id="bard" value="bard">Bard</option>
-                        <option id="clown" value="clown">Clown/Minstrel</option>
-                        <option id="dancer" value="dancer">Dancer</option>
-                        <option id="gypsy" value="gypsy">Gypsy</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="mage" value="mage">Mage</option>
-                        <option id="wizard" value="wizard">Wizard</option>
-                        <option id="highwizard" value="highwizard">High Wizard</option>
-                        <option id="sage" value="sage">Sage</option>
-                        <option id="professor" value="professor">Professor/Scholar</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="taekwon" value="taekwon">Taekwon</option>
-                        <option id="stargladiator" value="stargladiator">Star Gladiator</option>
-                        <option id="soullinker" value="soullinker">Soul Linker</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="ninja" value="ninja">Ninja</option>
-                        <option id="kagerou" value="kagerou">Kagerou</option>
-                        <option id="oboro" value="oboro">Oboro</option>
-                        <option value="none" disabled="disabled">===============</option>
-                        <option id="gunslinger" value="gunslinger">Gunslinger</option>
-                        <!-- <option id="rebellion" value="rebellion">Rebellion</option> -->
-                    </select>
-                </div>
-            </div>
-            <div class="gender">
-                <div class="gender-male">
-                    <input class="gender-button" type="radio" id="male" name="gender-name" value="male" checked>
-                    <label for="male">
-                        <i class="fa-solid fa-mars"></i>
-                    </label>
-                </div>
-                <div class="gender-female">
-                    <input class="gender-button" type="radio" id="female" name="gender-name" value="female">
-                    <label for="female">
-                        <i class="fa-solid fa-venus"></i>
-                    </label>
-                </div>
-            </div>
-            <div class="calculator">
-                <div class="calculator-character">
-                    <div class="character" id="character-class">
-                        <img src="../../img/sprites/Novice-male-removebg.png" alt="novice male job class">
-                    </div>
-                    <ul class="gear-list">
-                        <div class="gear-left">
-                            <li class="list-item left">
-                                <a href="" class="gear-button">
-                                    <div class="gear left" id="upper-headgear">
-                                    </div>
-                                </a>
-                                <p>head</p>
-                            </li>
-                            <li class="list-item left">
-                                <a href="" class="gear-button">
-                                    <div class="gear left" id="lower-headgear">
-                                    </div>
-                                </a>
-                                <p>head</p>
-                            </li>
-                            <li class="list-item left">
-                                <a href="" class="gear-button">
-                                    <div class="gear left" id="right-hand">
-                                    </div>
-                                </a>
-                                <p>R-hand</p>
-                            </li>
-                            <li class="list-item left">
-                                <a href="" class="gear-button">
-                                    <div class="gear left" id="garment">
-                                    </div>
-                                </a>
-                                <p>robe</p>
-                            </li>
-                            <li class="list-item left">
-                                <a href="" class="gear-button">
-                                    <div class="gear left" id="right-accessory">
-                                    </div>
-                                </a>
-                                <p>accessory</p>
-                            </li>
-                        </div>
-                        <div class="gear-right">
-                            <li class="list-item right">
-                                <p>head</p>
-                                <a href="" class="gear-button">
-                                    <div class="gear right" id="medium-headgear">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-item right">
-                                <p>body</p>
-                                <a href="" class="gear-button">
-                                    <div class="gear right" id="armor">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-item right">
-                                <p>L-hand</p>
-                                <a href="" class="gear-button">
-                                    <div class="gear right" id="left-hand">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-item right">
-                                <p>shoes</p>
-                                <a href="" class="gear-button">
-                                    <div class="gear right" id="shoes">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-item right">
-                                <p>accessory</p>
-                                <a href="" class="gear-button">
-                                    <div class="gear right" id="left-accessory">
-                                    </div>
-                                </a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-            <div class="calculator-stats">
-                <div class="stats-item">
-                    <ul class="stats-info_status">
-                        <li class="stat point-remaining">
-                            <p><strong>Points Remaining:</strong></p>
-                            <p id="status-point-remaining">(Number)48 for base lv 1</p>
-                            <!-- Du Base Level:
+                <div class="calculator-stats">
+                    <div class="stats-item">
+                        <ul class="stats-info_status">
+                            <li class="stat point-remaining">
+                                <p><strong>Points Remaining:</strong></p>
+                                <p id="status-point-remaining">(Number)48 for base lv 1</p>
+                                <!-- Du Base Level:
                             1 - 5: 3 par 3;
                             5 - 10: 4 par 4;
                             10 - 15: 5 par 5;
@@ -284,254 +289,257 @@
                             85 - 90: 20 par 20;
                             90 - 95: 21 par 21;
                             95 - 99: 22 par 22; -->
-                        </li>
-                        <li class="stat str" id="strength">
-                            <p class="status">STR</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="strength_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="strength_button-del">
-                        </li>
-                        <li class="stat agi" id="agility">
-                            <p class="status">AGI</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="agility_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="agility_button-del">
-                        </li>
-                        <li class="stat vit" id="vitality">
-                            <p class="status">VIT</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="vitality_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="vitality_button-del">
-                        </li>
-                        <li class="stat int" id="intelligence">
-                            <p class="status">INT</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="intelligence_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="intelligence_button-del">
-                        </li>
-                        <li class="stat dex" id="dexterity">
-                            <p class="status">DEX</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="dexterity_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="dexterity_button-del">
-                        </li>
-                        <li class="stat luk" id="luck">
-                            <p class="status">LUK</p>
-                            <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                            <input type="button" class="stats_button-add" id="luck_button-add">
-                            <p id="stats-point">(Number)Require Stats Point</p>
-                            <input type="button" class="stats_button-del" id="luck_button-del">
-                        </li>
-                    </ul>
-                </div>
-                <div class="stats-info">
-                    <ul class="stats-info_information">
-                        <li class="stats-info-operation">
-                            <p class="status">Atk</p>
-                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation">
-                            <p class="status">Def</p>
-                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation">
-                            <p class="status">Matk</p>
-                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation">
-                            <p class="status">Mdef</p>
-                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation hit">
-                            <p class="status">Hit</p>
-                            <p id="stats-info__operation">(Sum)Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation">
-                            <p class="status">Flee</p>
-                            <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation critical">
-                            <p class="status">Critical</p>
-                            <p id="stats-info__operation">(Sum)Stat</p>
-                        </li>
-                        <li class="stats-info-operation" id="stats-info__operation aspd">
-                            <p class="status">Aspd</p>
-                            <p id="stats-info__operation">(Sum)Stat</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="other-information">
-                <div class="other-info">
-                    <div class="other-info_header">
-                        <p><strong>Other Info:</strong></p>
+                            </li>
+                            <li class="stat str" id="strength">
+                                <p class="status">STR</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="strength_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="strength_button-del">
+                            </li>
+                            <li class="stat agi" id="agility">
+                                <p class="status">AGI</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="agility_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="agility_button-del">
+                            </li>
+                            <li class="stat vit" id="vitality">
+                                <p class="status">VIT</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="vitality_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="vitality_button-del">
+                            </li>
+                            <li class="stat int" id="intelligence">
+                                <p class="status">INT</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="intelligence_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="intelligence_button-del">
+                            </li>
+                            <li class="stat dex" id="dexterity">
+                                <p class="status">DEX</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="dexterity_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="dexterity_button-del">
+                            </li>
+                            <li class="stat luk" id="luck">
+                                <p class="status">LUK</p>
+                                <p id="stats-operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                                <input type="button" class="stats_button-add" id="luck_button-add">
+                                <p id="stats-point">(Number)Require Stats Point</p>
+                                <input type="button" class="stats_button-del" id="luck_button-del">
+                            </li>
+                        </ul>
                     </div>
-                    <div class="other-info_table">
-                        <div class="status-container">
-                            <ul class="status-elements">
-                                <p class="info-title"><strong>Player Resistance:</strong></p>
-                                <li class="status-resistance">
-                                    <p class="neutral">Neutral</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="water">Water</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="earth">Earth</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="fire">Fire</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="wind">Wind</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="poison">Poison</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="holy">Holy</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="shadow">Shadow</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="ghost">Ghost</p>
-                                    <p id="status-resistance_operation">(Number) 25% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    <p class="undead">Undead</p>
-                                    <p id="status-resistance_operation">(Number) 100% by default</p>
-                                </li>
-                            </ul>
-                            <ul class="status-type">
-                                <li class="status-resistance">
-                                    Formless
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Undead
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Brute
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Plant
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Insect
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Fish
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Demon
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Demi-Human
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Angel
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Dragon
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                            </ul>
-                            <ul class="status-effect">
-                                <li class="status-resistance">
-                                    Poison
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Stun
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Freeze
-                                    <p id="status-resistance_operation">(Number) 3% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Curse
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Blind
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Sleep
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Silence
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Chaos
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Bleeding
-                                    <p id="status-resistance_operation">(Number) 4% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Stone
-                                    <p id="status-resistance_operation">(Number) 3% by default</p>
-                                </li>
-                            </ul>
-                            <ul class="status-size">
-                                <li class="status-resistance">
-                                    Small
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Medium
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Large
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                            </ul>
-                            <ul class="status-special">
-                                <li class="status-resistance">
-                                    Boss Resistance
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Normal Resistance
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                                <li class="status-resistance">
-                                    Long-range Resistance
-                                    <p id="status-resistance_operation">(Number) 0% by default</p>
-                                </li>
-                            </ul>
+                    <div class="stats-info">
+                        <ul class="stats-info_information">
+                            <li class="stats-info-operation">
+                                <p class="status">Atk</p>
+                                <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation">
+                                <p class="status">Def</p>
+                                <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation">
+                                <p class="status">Matk</p>
+                                <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation">
+                                <p class="status">Mdef</p>
+                                <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation hit">
+                                <p class="status">Hit</p>
+                                <p id="stats-info__operation">(Sum)Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation">
+                                <p class="status">Flee</p>
+                                <p id="stats-info__operation">(Number)Principal Stat + (Number)Secondary Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation critical">
+                                <p class="status">Critical</p>
+                                <p id="stats-info__operation">(Sum)Stat</p>
+                            </li>
+                            <li class="stats-info-operation" id="stats-info__operation aspd">
+                                <p class="status">Aspd</p>
+                                <p id="stats-info__operation">(Sum)Stat</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="other-information">
+                    <div class="other-info">
+                        <div class="other-info_header">
+                            <p><strong>Other Info:</strong></p>
+                        </div>
+                        <div class="other-info_table">
+                            <div class="status-container">
+                                <ul class="status-elements">
+                                    <p class="info-title"><strong>Player Resistance:</strong></p>
+                                    <li class="status-resistance">
+                                        <p class="neutral">Neutral</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="water">Water</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="earth">Earth</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="fire">Fire</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="wind">Wind</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="poison">Poison</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="holy">Holy</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="shadow">Shadow</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="ghost">Ghost</p>
+                                        <p id="status-resistance_operation">(Number) 25% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        <p class="undead">Undead</p>
+                                        <p id="status-resistance_operation">(Number) 100% by default</p>
+                                    </li>
+                                </ul>
+                                <ul class="status-type">
+                                    <li class="status-resistance">
+                                        Formless
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Undead
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Brute
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Plant
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Insect
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Fish
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Demon
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Demi-Human
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Angel
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Dragon
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                </ul>
+                                <ul class="status-effect">
+                                    <li class="status-resistance">
+                                        Poison
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Stun
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Freeze
+                                        <p id="status-resistance_operation">(Number) 3% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Curse
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Blind
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Sleep
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Silence
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Chaos
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Bleeding
+                                        <p id="status-resistance_operation">(Number) 4% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Stone
+                                        <p id="status-resistance_operation">(Number) 3% by default</p>
+                                    </li>
+                                </ul>
+                                <ul class="status-size">
+                                    <li class="status-resistance">
+                                        Small
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Medium
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Large
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                </ul>
+                                <ul class="status-special">
+                                    <li class="status-resistance">
+                                        Boss Resistance
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Normal Resistance
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                    <li class="status-resistance">
+                                        Long-range Resistance
+                                        <p id="status-resistance_operation">(Number) 0% by default</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="">
+            </section>
         </section>
     </main>
     <footer class="footer">
