@@ -30,7 +30,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-} /*# sourceMappingURL=reset.css.map */
+} 
 @media screen and (min-width: 365px) {
   .header {
     width: 100%;
@@ -60,19 +60,35 @@ li {
   width: 100%;
   margin-bottom: 15px;
 }
-.container .container-saveandload {
+.container .section_saveandload {
   margin-bottom: 15px;
+}
+.container .container-saveandload {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container .container-saveandload__select {
+  padding: 10px 5px;
 }
 .container .container-saveandload i {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.container .container-saveandload i p {
+  margin-left: 10px;
 }
 .container .container-saveandload .saveandload__text {
   width: 210px;
+}
+.container .section-title {
+  margin-bottom: 15px;
 }
 .container .container-title {
   width: 100%;
@@ -102,6 +118,21 @@ li {
   padding: 1px 3px;
   box-sizing: border-box;
 }
+.container .section_character-simulator {
+  border: 1px solid black;
+  margin: 3px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container .section_character-simulator i {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.container .section_character-simulator i p {
+  margin-left: 10px;
+}
 .container .level-select {
   display: flex;
   justify-content: center;
@@ -116,7 +147,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .container .gender {
   display: flex;
@@ -251,8 +282,10 @@ li {
   border: 1px solid black;
 }
 .other-information .other-info .other-info_header {
+  display: flex;
+  justify-content: space-between;
   border: 1px solid black;
-  padding: 3px 2px;
+  padding: 3px 10px;
 }
 .other-information .other-info .status-container {
   padding: 3px 2px;

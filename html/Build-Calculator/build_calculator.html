@@ -30,6 +30,15 @@
     </header>
     <main class="main-container">
         <section class="container">
+            <section class="section-title">
+                <div class="container-title">
+                    <h1>Ragnarok Online Build Calculator</h1>
+                </div>
+                <div class="container-episode">
+                    <p class="episode-title">Episode</p>
+                    <p class="episode-desc">10.4</p>
+                </div>
+            </section>
             <section class="section_saveandload">
                 <div class="container-saveandload">
                     <i class="fa-solid fa-download">
@@ -82,16 +91,10 @@
                     </div>
                 </div>
             </section>
-            <section class="section-title">
-                <div class="container-title">
-                    <h1>Ragnarok Online Build Calculator</h1>
-                </div>
-                <div class="container-episode">
-                    <p class="episode-title">Episode</p>
-                    <p class="episode-desc">10.4</p>
-                </div>
-            </section>
             <section class="section_character-simulator">
+                <i class="fa-solid fa-id-card">
+                    <p>Character Simulator</p>
+                </i>
                 <div class="container-select">
                     <div class="level-select">
                         <div class="base-level_select">
@@ -381,8 +384,13 @@
                     <div class="other-info">
                         <div class="other-info_header">
                             <p><strong>Other Info:</strong></p>
+                            <select name="other-info" id="other-info_select">
+                                <option value="default">-</option>
+                                <option id="playerresistance" value="playerresistance">Player Resistance</option>
+                                <option id="casttime" value="casttime">Cast Time/delay</option>
+                            </select>
                         </div>
-                        <div class="other-info_table">
+                        <div class="other-info-table_resistance">
                             <div class="status-container">
                                 <ul class="status-elements">
                                     <p class="info-title"><strong>Player Resistance:</strong></p>
@@ -541,6 +549,26 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="other-info-table_cast">
+                            <div class="status-container">
+                                <div class="status_cast-time">
+                                    <p><strong>Cast Time: </strong></p>
+                                    <p id="cast-time">(Number on percent) 99,33% (default)</p>
+                                    <p id="cast-time_braggi">[<strong>Bragi:</strong> (Number on percent) 0% (default) |
+                                    </p>
+                                    <p id="cast-time_gear"><strong>Gear:</strong> (Number on percent) 0% (default) |</p>
+                                    <p id="cast-time_dex"><strong>DEX:</strong> (Number of total DEX) 1 (default)</p>
+                                </div>
+                                <div class="status_cast-delay">
+                                    <p><strong>Cast Delay: </strong></p>
+                                    <p id="cast_delay">(Number on percent) 100% (default)</p>
+                                    <p id="cast-delay_braggi">[<strong>Bragi:</strong> (Number on percent) 0% (default)
+                                        |</p>
+                                    <p id="cast-delay_gear"><strong>Gear:</strong> (Number on percent) 0% (default) ]
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -553,7 +581,104 @@
                         <div class="buffs-items_other-items"></div>
                         <div class="buffs-items_guild-skills"></div>
                         <div class="buffs-items_music-dance-skills"></div>
-                        <div class="buffs-items_effects-on-player"></div>
+                        <div class="buffs-items_effects-on-player">
+                            <div class="effects-on-player_table">
+                                <p>Miscellaneous Effects on Player</p>
+                                <p>(click to hide)</p>
+                                <div class="effects-on-player_left">
+                                    <div class="magic-ground">
+                                        <select id="magic-ground">
+                                            <option id="volcano" value="volcano">Volcano</option>
+                                            <option id="deluge" value="deluge">Deluge</option>
+                                            <option id="violent-gale" value="violent-gale">Violent Gale</option>
+                                        </select>
+                                        <select id="magic-ground_levels">
+                                            <option value="magic-ground_lvl">0</option>
+                                            <option value="magic-ground_lvl">1</option>
+                                            <option value="magic-ground_lvl">2</option>
+                                            <option value="magic-ground_lvl">3</option>
+                                            <option value="magic-ground_lvl">4</option>
+                                            <option value="magic-ground_lvl">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="provoke">
+                                        <p>Provoke (self)</p>
+                                        <select id="provoke-self_levels">
+                                            <option value="provoke-self_lvl">0</option>
+                                            <option value="provoke-self_lvl">1</option>
+                                            <option value="provoke-self_lvl">2</option>
+                                            <option value="provoke-self_lvl">3</option>
+                                            <option value="provoke-self_lvl">4</option>
+                                            <option value="provoke-self_lvl">5</option>
+                                            <option value="provoke-self_lvl">6</option>
+                                            <option value="provoke-self_lvl">7</option>
+                                            <option value="provoke-self_lvl">8</option>
+                                            <option value="provoke-self_lvl">9</option>
+                                            <option value="provoke-self_lvl">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="mind-breaker">
+                                        <p>Mind Breaker (self)</p>
+                                        <select id="mind-breaker-self_levels">
+                                            <option value="mind-breaker-self_lvl">0</option>
+                                            <option value="mind-breaker-self_lvl">1</option>
+                                            <option value="mind-breaker-self_lvl">2</option>
+                                            <option value="mind-breaker-self_lvl">3</option>
+                                            <option value="mind-breaker-self_lvl">4</option>
+                                            <option value="mind-breaker-self_lvl">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="agi-down">
+                                        <p>AGI Down</p>
+                                        <select id="agi-down_levels">
+                                            <option value="agi-down_lvl">-</option>
+                                            <option value="agi-down_lvl">1</option>
+                                            <option value="agi-down_lvl">2</option>
+                                            <option value="agi-down_lvl">3</option>
+                                            <option value="agi-down_lvl">4</option>
+                                            <option value="agi-down_lvl">5</option>
+                                            <option value="agi-down_lvl">6</option>
+                                            <option value="agi-down_lvl">7</option>
+                                            <option value="agi-down_lvl">8</option>
+                                            <option value="agi-down_lvl">9</option>
+                                            <option value="agi-down_lvl">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="quagmire">
+                                        <p>Quagmire</p>
+                                        <select id="quagmire_levels">
+                                            <option value="quagmire_lvl">-</option>
+                                            <option value="quagmire_lvl">1</option>
+                                            <option value="quagmire_lvl">2</option>
+                                            <option value="quagmire_lvl">3</option>
+                                            <option value="quagmire_lvl">4</option>
+                                            <option value="quagmire_lvl">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="wall-of-fog">
+                                        <p>Wall of Fog</p>
+                                        <input class="effects-on-player_button" type="button" id="wall-of-fog_button">
+                                    </div>
+                                    <div class="undead-attribute-change">
+                                        <p>Undead Attribute Change</p>
+                                        <input class="effects-on-player_button" type="button" id="undead-attribute-change_button">
+                                    </div>
+                                    <div class="holy-armor">
+                                        <p>Holy Armor [B.S.S.]</p>
+                                        <input class="effects-on-player_button" type="button" id="holy-armor_button">
+                                    </div>
+                                    <div class="magnum-break-bonus">
+                                        <p>Magnum Break Bonus</p>
+                                        <input class="effects-on-player_button" type="button" id="magnum-break-bonus_button">
+                                    </div>
+                                    <div class="set-crit-to-zero">
+                                        <p>Set CRIT to 0%</p>
+                                        <input class="effects-on-player_button" type="button" id="set-crit-to-zero_button">
+                                    </div>
+                                </div>
+                                <div class="effects-on-player_right"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
