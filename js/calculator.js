@@ -28,6 +28,23 @@ const JOB_GENDER_EXCEPTIONS = {
     },
 };
 
+const JOB_LEVEL_EXCEPTIONS = {
+        novice: 'novice',
+        swordman: 'swordman',
+        thief: 'thief',
+        merchant: 'merchant',
+        acolyte: 'acolyte',
+        archer: 'archer',
+        mage: 'mage',
+        taekwon: 'taekwon',
+        ninja: 'ninja',
+        gunslinger: 'gunslinger',
+};
+
+// function setJobLevelException(exceptions, job, gender){
+//     if ()
+// };
+
 function setJobException(exceptions, job, gender) {
     if (exceptions[gender][job]) {
         currentJobClass = exceptions[gender][job];
@@ -64,7 +81,7 @@ statsButtonAdd.addEventListener('click', function (e) {
 });
 
 statsButtonDel.addEventListener('click', function (e) {
-    if (currentStats>=-1) {
+    if (currentStats>=1) {
         currentStats = currentStats-1;
         statsButtonNumber.innerHTML = currentStats;
     }
