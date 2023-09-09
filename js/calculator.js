@@ -57,21 +57,15 @@ jobClassSelect.addEventListener('change', function (e) {
 });
 
 statsButtonAdd.addEventListener('click', function (e) {
-    if (currentStats<99) {
+    if (currentStats<=98) {
         currentStats = currentStats+1;
         statsButtonNumber.innerHTML = currentStats;
-    }
-    else {
-        document.getElementById('strength_button-add').disabled=true;
     }
 });
 
 statsButtonDel.addEventListener('click', function (e) {
-    if (currentStats>0) {
+    if (currentStats>=-1) {
         currentStats = currentStats-1;
         statsButtonNumber.innerHTML = currentStats;
-    }
-    else {
-        document.getElementById('strength_button-del').disabled=true;
     }
 });
